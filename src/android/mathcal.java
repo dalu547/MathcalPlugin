@@ -18,14 +18,15 @@ public class mathcal extends CordovaPlugin {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
             return true;
-        }else if(action.equals("add")){
-           this.add(args, callbackContext);
-           return true;
-        }else if(action.equals("substract")){
-            this.substract(args, callbackContext);
-            return true;
         }
-        return false;
+        // else if(action.equals("add")){
+        //    this.add(args, callbackContext);
+        //    return true;
+        // }else if(action.equals("substract")){
+        //     this.substract(args, callbackContext);
+        //     return true;
+        // }
+   return false;
     }
 
     private void coolMethod(String message, CallbackContext callbackContext)

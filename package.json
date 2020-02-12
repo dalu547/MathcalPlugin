@@ -1,16 +1,43 @@
 {
-  "name": "mathcal",
+  "name": "cordova-plugin-mathcal",
   "version": "1.0.0",
   "description": "This plugin has addition and substraction calculation",
   "main": "index.js",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-device",
+    "platforms": [
+      "android",
+      "ios",
+      "windows",
+      "browser",
+      "osx"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dalu547/MathcalPlugin"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "add",
     "substract",
-    "matcal"
+    "cordova",
+    "mathcal",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
   ],
   "author": "Dalayya Kalla",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova": ">100"
+      }
+    }
+  }
+  
 }

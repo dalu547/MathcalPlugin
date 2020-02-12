@@ -39,10 +39,10 @@ public class mathcal extends CordovaPlugin {
 
     private void add(JSONArray args,CallbackContext callbackContext){
 
-        if(array != null){
+        if(args != null){
             try{
-                int param1 = Integer.parseInt(getJSONobject(0).getString("param1"));
-                int param2 = Integer.parseInt(getJSONobject(0).getString("param2"));
+                int param1 = Integer.parseInt(args.getJSONobject(0).getString("param1"));
+                int param2 = Integer.parseInt(args.getJSONobject(1).getString("param2"));
                 int result = param1 + param2;
                 callbackContext.success("Addition of two is "+result);
             }catch(Exception ex){
@@ -55,10 +55,10 @@ public class mathcal extends CordovaPlugin {
 
     private void substract(JSONArray args,CallbackContext callbackContext){
 
-        if(array != null){
+        if(args != null){
             try{
-                int param1 = Integer.parseInt(getJSONobject(0).getString("param1"));
-                int param2 = Integer.parseInt(getJSONobject(0).getString("param2"));
+                int param1 = Integer.parseInt(args.getJSONobject(0).getString("param1"));
+                int param2 = Integer.parseInt(args.getJSONobject(1).getString("param2"));
                 int result = param1 - param2;
                 callbackContext.success("Substraction of two is "+result);
             }catch(Exception ex){

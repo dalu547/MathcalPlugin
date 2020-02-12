@@ -37,35 +37,35 @@ public class mathcal extends CordovaPlugin {
         }
     }
 
-    private void add(JSONArray args,CallbackContext callbackContext){
+    // private void add(JSONArray args,CallbackContext callbackContext){
 
-        if(args != null){
-            try{
-                int param1 = Integer.parseInt(args.getJSONobject(0).getString("param1"));
-                int param2 = Integer.parseInt(args.getJSONobject(1).getString("param2"));
-                int result = param1 + param2;
-                callbackContext.success("Addition of two is "+result);
-            }catch(Exception ex){
-               callbackContext.error("Something went wrong "+ex);
-            }
-        }else{
-            callbackContext.error("Parameters should not be null");
-        }
-    }
+    //     if(args != null){
+    //         try{
+    //             int param1 = Integer.parseInt(args.getJSONobject(0).getString("param1"));
+    //             int param2 = Integer.parseInt(args.getJSONobject(1).getString("param2"));
+    //             int result = param1 + param2;
+    //             callbackContext.success("Addition of two is "+result);
+    //         }catch(Exception ex){
+    //            callbackContext.error("Something went wrong "+ex);
+    //         }
+    //     }else{
+    //         callbackContext.error("Parameters should not be null");
+    //     }
+    // }
 
-    private void substract(JSONArray args,CallbackContext callbackContext){
+    // private void substract(JSONArray args,CallbackContext callbackContext){
 
-        if(args != null){
-            try{
-                int param1 = Integer.parseInt(args.getJSONobject(0).getString("param1"));
-                int param2 = Integer.parseInt(args.getJSONobject(1).getString("param2"));
-                int result = param1 - param2;
-                callbackContext.success("Substraction of two is "+result);
-            }catch(Exception ex){
-               callbackContext.error("Something went wrong "+ex);
-            }
-        }else{
-            callbackContext.error("Parameters should not be null");
-        }
-    }
+    //     if(args != null){
+    //         try{
+    //             int param1 = Integer.parseInt(args.getJSONobject(0).getString("param1"));
+    //             int param2 = Integer.parseInt(args.getJSONobject(1).getString("param2"));
+    //             int result = param1 - param2;
+    //             callbackContext.success("Substraction of two is "+result);
+    //         }catch(Exception ex){
+    //            callbackContext.error("Something went wrong "+ex);
+    //         }
+    //     }else{
+    //         callbackContext.error("Parameters should not be null");
+    //     }
+    // }
 }
